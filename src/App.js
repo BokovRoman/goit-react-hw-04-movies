@@ -1,11 +1,12 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import HomePage from './components/HomePage/HomePage';
+import routes from './routes';
 
 const App = () => (
   <>
     <Switch>
-    <Route path="/" exact component={HomePage} />
+    <Route exact path={routes.home} component={HomePage} />
     {/* <Route path="/movies" component={MoviesPage} />
     <Route path="/movies/:movieId" component={MovieDetailsPage} />
     <Route path="/movies/:movieId/cast" component={Cast} />
